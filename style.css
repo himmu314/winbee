@@ -1,0 +1,224 @@
+* {
+  transition: .3s ease;
+  scroll-behavior: smooth;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.director-wrap {
+  overflow: hidden;
+  position: relative;
+}
+
+.director-bg {
+  opacity: 0.3;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+}
+
+.director-content {
+  position: relative;
+}
+
+
+
+.bg-footer {
+  background-image: url("images/tower.jpg");
+  background-position: center;
+  background-size: cover;
+  background-color: hsl(248, 67%, 2%);
+
+  background-blend-mode: soft-light;
+
+}
+
+.footer-text-color {
+  color: hsl(0, 0%, 82%);
+}
+
+.footer-link {
+
+  text-decoration: none;
+  color: hsl(0, 0%, 82%);
+}
+
+.footer-link:hover {
+  color: white;
+  font-size: large;
+}
+
+.footer-map {
+
+
+  border-radius: 15px;
+
+}
+
+.text-orange {
+  color: darkorange;
+}
+
+.bg-products {
+  background-color: rgb(192, 237, 238);
+}
+
+.background {
+  background-image: url("images/background.jpg");
+  background-attachment: fixed;
+
+}
+
+.service-background {
+  background-image: url("images/services/solar_panel_3d_render_19.jpg");
+  background-attachment: fixed;
+  background-color: rgb(197, 221, 240);
+  background-blend-mode: soft-light;
+  background-position: center;
+
+}
+
+.service-rooftop-card {
+  border-radius: 2rem;
+  background-color: rgb(141, 226, 226);
+}
+
+.glass-effect {
+  background-color: transparent;
+  border: 0;
+}
+
+.glass-effect:hover {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.service-cover {
+  background-image: url("./images/pattern.png");
+  background-attachment: fixed;
+  background-color: rgb(139, 208, 240);
+  background-blend-mode: soft-light;
+  background-position: center;
+  /* background-repeat: no-repeat; */
+
+}
+
+.service-card-body {
+  background-color: aliceblue;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+}
+
+.slide-up {
+  transform: translateY(-3rem);
+}
+
+.bg-lightpink {
+  background-color: rgb(250, 225, 228);
+}
+
+.border-rounded {
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+}
+
+.bg-other-products {
+  background-image: url("services/icons/cover.png");
+  background-attachment: fixed;
+  background-color: rgb(10, 136, 42);
+  background-blend-mode: soft-light;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  border-radius: 1.5rem;
+}
+
+.solar-install-mainpage {
+  transform: translateY(-3rem);
+  border-radius: 1.5rem;
+}
+
+
+/* 
+##########################################################
+########################################################## */
+
+
+.slide-up-hover:hover {
+  transition: 0.7s ease;
+  transform: translateY(-1rem);
+}
+
+.scaling-hover:hover {
+  transform: scale(1.05);
+}
+
+.tiling-animation {
+  animation: tiling 3s linear infinite;
+}
+
+@keyframes tiling {
+
+  0% {
+    transform: translateX(0rem);
+  }
+
+  50% {
+    transform: translateX(-1rem);
+  }
+
+  100% {
+    transform: translateX(0rem);
+  }
+}
+
+
+
+.zooming-animation {
+  animation: zooming 3s linear infinite;
+}
+
+@keyframes zooming {
+
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.9);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+.updown-animation {
+  animation: updown 3s linear infinite;
+}
+
+@keyframes updown {
+
+  0% {
+    transform: translateY(0rem);
+  }
+
+  50% {
+    transform: translateY(-0.4rem);
+  }
+
+  100% {
+    transform: translateY(0rem);
+  }
+}
